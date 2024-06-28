@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="right">
+            <div id="figure">
+                <img id="foto" src="./Img/anja-where am i.png" alt="Nuk mundemi me gjete foton">
+            </div>
+            <div id="circle"></div>
+            <div id="cicle2"></div>
+            <h2 id="song_name">Anja - Where am I</h2>
+            <audio id="myAudio" controls>
+                <source src="./songs/Anja - Where I Am (Denmark) Eurovision 2017 - Official Music Video (256).mp3"
+                    type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="left">
+            <p>Your songs :</p>
+            <div class="contain_songs">
+                <div class="song" id="1">Anja - Where am I</div>
+                <div class="song" id="2">Indila - Dernière Danse</div>
+                <div class="song" id="3">Katy Perry - Firework</div>
+                <div class="song" id="4">KDA (Feat. Madison Beer X Kim Petras) - 'Villain</div>
+                <div class="song" id="5">The Greatest Showman - Never Enough</div>
+                <div class="song" id="6">Once upon a december</div>
+                <div class="song" id="7">Moana - How far I'll go</div>
+                <div class="song" id="8">Fall out boys - Immortals</div>
+                <div class="song" id="9">Dwayne Johnson - You're Welcome</div>
+                <div class="song" id="10"></div>
+                <div class="song" id="12"></div>
+                <div class="song" id="13"></div>
+                <div class="song" id="14"></div>
+                <div class="song" id="15"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const audioElement = document.getElementById("myAudio");
+        audioElement.play(); // Starts playing the audio
+        audioElement.pause()
+    </script>
+</body>
+
+</html>

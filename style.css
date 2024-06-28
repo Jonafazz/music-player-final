@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('./Img/anime.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#container {
+    width: 66em;
+    height: 40em;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50px;
+    border-radius: 40px;
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 15px 15px  20px rgba(255, 255, 255, 0.343) ;
+}
+
+.right {
+    /* background-color: rgb(164, 164, 67); */
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px 0px 0px 40px;
+}
+
+.left {
+    /* background-color: turquoise; */
+    width: 45%;
+    height: 100%;
+    border-radius: 0px 40px 40px 0px;
+    box-shadow: inset 10px 5px 10px rgba(0, 0, 0, 0.096);
+    z-index: 1000;
+}
+
+#figure #foto {
+    background-color: tomato;
+    width: 16em;
+    height: 20em;
+    /* top: 47px; */
+    border-radius: 0px 0px 150px 150px;
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    background-size: contain;
+    z-index: 100;
+
+}
+
+#circle {
+    background-color: rgba(255, 255, 255, 0.385);
+    width: 26.7em;
+    height: 26.7em;
+    border-radius: 300px;
+    position: absolute;
+    left: 380px;
+    top: 280px;
+    filter: blur(3px);
+}
+
+#cicle2 {
+    background-color: rgba(255, 255, 255, 0.385);
+    width: 10.7em;
+    height: 10.7em;
+    border-radius: 300px;
+    position: absolute;
+    left: 70px;
+    bottom: 350px;
+    filter: blur(3px);
+}
+
+#song_name {
+    position: absolute;
+    top: 330px;
+    font-size: 30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#myAudio {
+    position: absolute;
+    top: 440px;
+    width: 400px;
+    color-interpolation-filters: rgb(0, 0, 0);
+}
+
+p {
+    /* padding-left: 55px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.contain_songs {
+    height: 36em;
+    width: 99%;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.song {
+    background-color: rgba(255, 255, 255, 0.175);
+    width: 99%;
+    height: 55px;
+    border: 1px solid rgba(0, 0, 0, 0.44);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.song:hover {
+    background-color: rgba(255, 255, 255, 0.385);
+    cursor: pointer;
+}
+
+.contain_songs::-webkit-scrollbar {
+    display: none;
+}
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: rgba(217, 240, 255, 0.498);
+     color: rgb(255, 255, 255);
+     }
